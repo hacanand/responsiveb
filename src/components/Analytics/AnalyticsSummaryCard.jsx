@@ -1,12 +1,6 @@
 import * as React from "react";
 
-// interface CardProps {
-//   title: string;
-//   status: "green" | "red";
-//   completedCount: number;
-//   totalCount: number;
-//   percentDone: number;
-// }
+ 
 
 const Card = ({
   title,

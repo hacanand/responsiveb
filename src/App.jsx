@@ -3,7 +3,7 @@ import React from 'react'
  
 import Navigation from './components/Navigation';
 import AnalyticPage from './components/Analytics/AnalyticsPage';
-// import MyComponent from './components/Test';
+ import Test from './components/Test';
    
  
  
@@ -14,11 +14,10 @@ function App() {
         <div className='flex'>
           <div className='p-2'>
           <Navigation />
-
           </div>
          <div className='w-10/12 '>
           <AnalyticPage />
-          {/* <MyComponent/> */}
+           {/* <Test/> */}
           </div>  
         </div>
        </div>

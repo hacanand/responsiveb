@@ -3,6 +3,7 @@ import React from "react";
 import AnalyticsOptions from "./AnalyticsOptions";
 import AnalyticsCard from "./AnalyticsCard";
 import AnalyticsSummaryCard from "./AnalyticsSummaryCard";
+import AnalyticsTable from "./AnalyticsTable";
 
 function AnalyticPage() {
   return (
@@ -13,6 +14,7 @@ function AnalyticPage() {
         <AnalyticsOptions />  
           <AnalyticsCard />  
           <AnalyticsSummaryCard />
+          <AnalyticsTable/>
         </div>
       </div>
     </div>
