@@ -38,7 +38,7 @@ function SearchAndProfile() {
         <div className="flex gap-2 items-center px-2 py-0.5 rounded-sm ">
           <CiSearch className="text-cyan-600 shrink-0 self-stretch my-auto aspect-square w-[18px] text-xl " />
           <div className="flex flex-col flex-1 justify-center self-stretch py-0.5">
-            <div className="absolute justify-center text-xs leading-3 whitespace-nowrap     text-cyan-600 -top-2 bg-white  ">
+            <div className="absolute justify-center text-xs leading-3 whitespace-nowrap text-cyan-600 -top-2 bg-white  ">
               Search
             </div>
             <label htmlFor="search" className="sr-only">

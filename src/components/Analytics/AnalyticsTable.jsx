@@ -184,8 +184,18 @@ const TableCaptionPeriodTabs = () => {
 };
 const TablePeriodSelector = ({title}) => {
   return (
-    <div className="flex gap-2 px-3 py-1.5 bg-white rounded border border-solid border-zinc-300 text-neutral-400">
-      <select name="pets" id="pet-select">
+    <div
+      className={`flex gap-2 px-3 py-1.5  rounded  ${
+        title == "PAGEVIEWS"
+          ? "text-neutral-700"
+          : "text-neutral-400 border border-solid bg-white border-zinc-300"
+      }`}
+    >
+      <select
+        name="pets"
+        id="pet-select"
+        className="font-semibold leading-3   w-full bg-transparent border-none focus:outline-none focus:ring-0"
+      >
         <option value="select period">{title}</option>
         <option value="5 min">5 min</option>
         <option value="5 min">5 min </option>
