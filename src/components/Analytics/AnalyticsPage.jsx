@@ -1,0 +1,22 @@
+import React from "react";
+  import SearchAndProfile from "./SearchAndProfile";
+import AnalyticsOptions from "./AnalyticsOptions";
+import AnalyticsCard from "./AnalyticsCard";
+import AnalyticsSummaryCard from "./AnalyticsSummaryCard";
+
+function AnalyticPage() {
+  return (
+    <div>
+      <div className="h-full w-full">
+        <div className="flex flex-col gap-8 p-4">
+        <SearchAndProfile />    
+        <AnalyticsOptions />  
+          <AnalyticsCard />  
+          <AnalyticsSummaryCard />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default AnalyticPage;
