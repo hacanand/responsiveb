@@ -9,6 +9,7 @@ import { HiOutlineRocketLaunch } from "react-icons/hi2";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { IoSettingsOutline } from "react-icons/io5";
 import { IoLogOutOutline } from "react-icons/io5";
+ 
 
 // function Icon({ src, alt, className }) {
 //   return (
@@ -68,11 +69,13 @@ const navItems = [
   },
 ];
 
-function Navigation() {
+function Navigation({ setActiveTab}) {
   const [activeItem, setActiveItem] = React.useState("Analytics");
 
   const handleNavItemClick = (label) => {
     setActiveItem(label);
+    setActiveTab(label);
+
   };
   const handleBackClick = () => {
     console.log("Back clicked");
