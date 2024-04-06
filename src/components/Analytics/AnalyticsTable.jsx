@@ -194,7 +194,7 @@ const TablePeriodSelector = ({title}) => {
       <select
         name="pets"
         id="pet-select"
-        className="font-semibold leading-3   w-full bg-transparent border-none focus:outline-none focus:ring-0"
+        className="font-semibold leading-3 w-full bg-transparent border-none focus:outline-none focus:ring-0"
       >
         <option value="select period">{title}</option>
         <option value="5 min">5 min</option>
