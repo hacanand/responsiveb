@@ -78,7 +78,7 @@ function Navigation({ setActiveTab}) {
 
   };
   const handleBackClick = () => {
-    console.log("Back clicked");
+    
   };
   const handleSettingsClick = () => {
     console.log("Settings clicked");

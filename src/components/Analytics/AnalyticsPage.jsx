@@ -8,13 +8,13 @@ import AnalyticsTable from "./AnalyticsTable";
 function AnalyticPage() {
   return (
     <div>
-      <div className="h-full w-full">
-        <div className="flex flex-col gap-8 p-4">
-        <SearchAndProfile />    
-        <AnalyticsOptions />  
-          <AnalyticsCard />  
+      <div className="w-full max-h-[887px] overflow-y-auto no-scrollbar">
+        <div className="flex flex-col gap-8 p-4 ">
+          <SearchAndProfile />
+          <AnalyticsOptions />
+          <AnalyticsCard />
           <AnalyticsSummaryCard />
-          <AnalyticsTable/>
+          <AnalyticsTable />
         </div>
       </div>
     </div>
