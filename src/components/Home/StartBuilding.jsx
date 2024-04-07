@@ -87,7 +87,7 @@ function StartBuilding() {
         <div className="flex   self-stat font-medium leading-loose text-neutral-600  max-md:flex-wrap">
           <div className="flex px-12 gap-12 ">
             <div className="my-auto">Wait Time</div>
-            <div className="leading-10  flex  px-12 self-end gap-32  border-cyan-500 border-b-2">
+            <div className="leading-10  flex  px-12 self-end gap-32  border-cyan-500 border-b-2 ">
               {waitTimeCardData.map((card, index) => (
                 <div
                   key={index}
@@ -99,10 +99,12 @@ function StartBuilding() {
             </div>
           </div>
         </div>
-        <div className="flex gap-5 justify-between self-center mt-12 w-full text-xl font-semibold leading-5 max-w-[950px] text-zinc-600 max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
-          <div>Flow time = 47 Days</div>
-          <div className="max-md:max-w-full">Total Active time = 5 Days</div>
-        </div>
+        <div className="flex  justify-between self-center mt-12 w-full text-xl font-semibold leading-5 max-w-[950px] text-zinc-600 max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
+        <div>Flow time = 47 Days</div>
+        <div >Total Active time = 5 Days</div>
+        <div>Flow Efficiency=11%</div>
+          </div>
+          <button className=" mt-16 py-2 px-8 rounded-full text-white self-center bg-cyan-900">Save</button>
       </div>
   
   );

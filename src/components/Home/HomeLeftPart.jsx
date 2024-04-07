@@ -26,9 +26,9 @@ function Card({ title, buttonText, onClick ,index}) {
   );
 }
 
-function HomeLeftPart() {
+function HomeLeftPart({ setStartBuilding}) {
   const handleStartBuildingClick = () => {
-    console.log("Start Building clicked");
+    setStartBuilding(true);
   };
 
   return (
