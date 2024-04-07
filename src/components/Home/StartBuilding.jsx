@@ -13,7 +13,7 @@ const ContentCard = ({ imageSrc, title }) => (
 );
 
 const WaitTimeCard = ({ title }) => (
-  <div className="grow justify-center items-start px-5 py-8 max-w-48 max-h-56 text-sm font-medium leading-5 bg-emerald-50 text-neutral-500 max-md:mt-10">
+  <div className=" justify-center items-start pl-5 pt-4 p-2 max-w-44 max-h-56  text-sm font-medium leading-2 bg-emerald-50 text-neutral-500 max-md:mt-10">
     {title}
   </div>
 );
@@ -47,7 +47,7 @@ function StartBuilding() {
   ];
 
   return (
-    <div className="flex flex-col  w-full">
+    <div className="flex flex-col h-full w-full">
       <SearchAndProfile />
       <div className="flex flex-col mt-32 ml-48 max-w-full text-base font-medium leading-5 text-white ">
         <div className="flex max-md:flex-wrap max-md:pr-5 overflow-x-auto max-w-[900px] no-scrollbar ">
@@ -68,11 +68,11 @@ function StartBuilding() {
           ))}
         </div>
       </div>
-      <div className="w-full h-full" />
-      <div className="flex  pt-6 self-stat font-medium leading-loose text-neutral-600  max-md:flex-wrap">
-        <div className="flex px-12 gap-10 ">
+      <div className="w-full" />
+      <div className="flex pt-6 self-stat font-medium leading-loose text-neutral-600  max-md:flex-wrap">
+        <div className="flex ml-12 justify-between gap-4 self-end">
           <div className="my-auto">Active Time</div>
-          <div className="leading-10  flex border-b border-t px-6 border-gray-400 self-end gap-56 justify-between">
+          <div className="leading-8 grow shrink flex border-b border-t px-6 border-gray-400 self-end gap-48 justify-between">
             <div>1 Day</div>
             <div>2 Days</div>
             <div>4 Hours</div>
@@ -82,7 +82,7 @@ function StartBuilding() {
       </div>
 
       <div className="flex self-stat font-medium leading-loose text-neutral-600  max-md:flex-wrap">
-        <div className="flex px-12 gap-12 ">
+        <div className="flex ml-12 gap-4 ">
           <div className="my-auto">Wait Time</div>
           <div className="leading-10  flex  px-12 self-end gap-32  border-cyan-500 border-b-2 ">
             {waitTimeCardData.map((card, index) => (

@@ -19,15 +19,15 @@ const IconButton = ({ src }) => {
 function SearchAndProfile() {
   const iconButtons = [
     {
-      src: <FaRegBell className="aspect-square w-[21px]" />,
+      src: <FaRegBell className="aspect-square w-[21px] cursor-pointer" />,
       alt: "Icon 1",
     },
     {
-      src: <AiOutlineMessage className="aspect-square w-[21px]" />,
+      src: <AiOutlineMessage className="aspect-square w-[21px] cursor-pointer" />,
       alt: "Icon 2",
     },
     {
-      src: <IoSettingsOutline className="aspect-square w-[21px]" />,
+      src: <IoSettingsOutline className="aspect-square w-[21px] cursor-pointer" />,
       alt: "Icon 3",
     },
   ];
@@ -51,7 +51,7 @@ function SearchAndProfile() {
               className=" font-semibold leading-3 p-2  w-full bg-transparent border-none focus:outline-none focus:ring-0"
             />
           </div>
-          <RxCrossCircled className="shrink-0 self-stretch my-auto aspect-square w-[15px] text-cyan-600" />
+          <RxCrossCircled className=" cursor-pointer shrink-0 self-stretch my-auto aspect-square w-[15px] text-cyan-600" />
         </div>
       </div>
       <div className="flex gap-3.5 items-center ">
@@ -59,7 +59,7 @@ function SearchAndProfile() {
           <IconButton key={index} src={button.src} alt={button.alt} />
         ))}
         <RxAvatar
-          className="shrink-0 self-stretch rounded-full 
+          className="shrink-0 self-stretch rounded-full cursor-pointer
          flex justify-center items-center p-1.5 my-auto w-10 h-10 shadow-md  text-cyan-800"
         />
       </div>

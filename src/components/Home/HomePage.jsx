@@ -11,7 +11,7 @@ function HomePage() {
       <div className="flex gap-8 p-4">
         {startBuilding && <StartBuilding />}
         {!startBuilding && <HomeLeftPart setStartBuilding={setStartBuilding} />}
-        <vr className="border-r-2 border-gray-200" />
+        {!startBuilding && <vr className="border-r-2 border-gray-200" />}
         {!startBuilding && <HomeRightPart />}
       </div>
     </div>
