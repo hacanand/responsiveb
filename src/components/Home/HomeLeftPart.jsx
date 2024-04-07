@@ -13,7 +13,7 @@ function Card({ title, buttonText, onClick ,index}) {
   return (
     <section className="flex flex-col items-center px-10 py-8 mt-7 w-full text-lg font-medium leading-5 text-center text-white border bg-gray-200 rounded-3xl shadow-sm max-md:px-5 max-md:max-w-full">
       <ProgressIndicator value={index} total={6} />
-      <h2 className="self-stretch mt-10 text-2xl leading-8  text-black max-md:max-w-full">
+      <h2 className="self-stretch mt-10 text-2xl leading-8 px-8 text-black max-md:max-w-full">
         {title}
       </h2>
       <button
@@ -41,12 +41,13 @@ function HomeLeftPart() {
         guide below.
       </p>
       <div className="grid grid-cols-1 ">
-        <Carousel leftControl=" " rightControl=" "  className=" ">
+        <Carousel leftControl=" " rightControl=" " >
           {Array.from({ length: 6 }).map((_, index) => (
             <Card
               title="Build your development value stream map"
                 buttonText="Start Building"
-                index={index+1}
+              index={index + 1}
+              key={index}
               onClick={handleStartBuildingClick}
             />
           ))}

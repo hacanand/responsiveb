@@ -34,7 +34,7 @@ function SearchAndProfile() {
 
   return (
     <div className="flex gap-5 justify-between self-center w-full max-md:flex-wrap  ">
-      <div className="relative flex flex-col justify-center self-start mt-1.5 font-light rounded-sm border border-solid border-zinc-500  min-w-[480px] ">
+      <div className="relative mx-12 flex flex-col justify-center self-start mt-1.5 font-light rounded-sm border border-solid border-zinc-500  min-w-[480px] ">
         <div className="flex gap-2 items-center px-2 py-0.5 rounded-sm ">
           <CiSearch className="text-cyan-600 shrink-0 self-stretch my-auto aspect-square w-[18px] text-xl " />
           <div className="flex flex-col flex-1 justify-center self-stretch py-0.5">
